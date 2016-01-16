@@ -1,6 +1,6 @@
 
-import { expect } from 'chai';
-import { square } from '../src/arrow-functions';
+import {expect} from 'chai';
+import {square} from '../src/arrow-functions';
 
 describe('arrow-functions', () => {
 

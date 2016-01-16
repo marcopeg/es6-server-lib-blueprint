@@ -1,6 +1,6 @@
 
-import { expect } from 'chai';
-import { Person } from '../src/classes';
+import {expect} from 'chai';
+import {Person} from '../src/classes';
 
 describe('Classes', () => {
 
