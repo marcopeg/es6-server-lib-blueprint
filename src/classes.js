@@ -1,17 +1,17 @@
 
-class Foo {
+export class Person {
 
-    static prop1 = 'aaa';
+    name = null;
+    age = null;
 
-    state = {
-        foo: 1
-    };
-
-    constructor() {
-        console.log('construct foo');
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
 
-    doSomething() {
-        console.log('haha');
+    birthday() {
+        this.age += 1;
+        return `Happy birthday ${this.name}, you are ${this.age} years old`;
     }
+    
 }

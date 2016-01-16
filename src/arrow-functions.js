@@ -1,4 +1,5 @@
 
-var a = () => {
-    console.log('my function');
+export var square = (n) => {
+    return n * n;
 };
+
