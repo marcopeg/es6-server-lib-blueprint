@@ -11,12 +11,17 @@
     "test:cov": "./node_modules/.bin/babel-node ./node_modules/.bin/isparta cover _mocha",
     "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib",
     "build:watch": "./node_modules/babel-cli/bin/babel.js --watch src --out-dir lib",
-    "clean": "./node_modules/rimraf/bin.js lib coverage"
+    "clean": "./node_modules/rimraf/bin.js lib coverage",
+    "prepublish": "npm run clean && npm run build && npm test",
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcopeg/es6-server-lib-blueprint.git"
   },
+  "files": [
+    "lib",
+    "src"
+  ],
   "keywords": [
     "es6",
     "js2015",
@@ -30,7 +35,7 @@
     "boilerplate",
     "library"
   ],
-  "author": "Marco Pegoraro <marco.pegoraro@gmail.com>",
+  "author": "Marco Pegoraro <hello@marcopeg.com> (http://github.com/marcopeg)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marcopeg/es6-server-lib-blueprint/issues"
